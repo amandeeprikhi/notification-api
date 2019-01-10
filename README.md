@@ -1,4 +1,4 @@
-# sendgrid-api
+# notification-api
 
 ## How to install
 * Clone the repo
