@@ -1,7 +1,7 @@
 {
-  "name": "sendgrid-api",
+  "name": "notification-api",
   "version": "1.0.0",
-  "description": "An API to interact with excel files",
+  "description": "A notification API to send emails and SMS.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,8 +13,10 @@
     "async": "^2.6.1",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "sendgrid": "^5.2.3"
+    "sendgrid": "^5.2.3",
+    "twilio": "^3.26.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
