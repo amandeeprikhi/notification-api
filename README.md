@@ -11,5 +11,5 @@
 ## exposed routes
 
 * '/api/email' : For sending emails
-* '/api/sms/single' : For sending SMS to a single number. Number need to be provided in the request body.
-* '/api/sms/multiple' : For sending SMS to multiple numbers. Numbers need to be provided in the request body.
+* '/api/sms/single' : For sending SMS to a single number. Number need to be provided in the request body in JSON format. 
+* '/api/sms/multiple' : For sending SMS to multiple numbers. Numbers need to be provided in the request body in JSON format.
