@@ -1,5 +1,6 @@
 var helper = require('sendgrid').mail;
 var async = require('async');
+var SEND_GRID_API_KEY = require('./sendgrid_api_key');
 
 var sendEmail = {
   sendEmail:  function (
@@ -12,7 +13,8 @@ var sendEmail = {
   ) {
     const errorEmails = [];
     const successfulEmails = [];
-    const sg = require('sendgrid')('SEND_GRID_API_KEY');
+    console.log(SEND_GRID_API_KEY);
+    const sg = require('sendgrid')(SEND_GRID_API_KEY);
     async.parallel([
       function (callback) {
         // Add to emails

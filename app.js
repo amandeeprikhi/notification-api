@@ -13,7 +13,7 @@ app.post('/api/email', function (req, res, next) {
         email.sendEmail(
           callback,
           'SENDER_EMAIL_ID',//sender email id
-          ['RECEIVER_EMAIL_ID'],//receiver email id
+          ['RECEIVER_EMAIL_ID'],//receiver email ids
           'Subject Line',
           'Text Content',
           '<p style="font-size: 32px;">HTML Content</p>'

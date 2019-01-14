@@ -1,6 +1,5 @@
-const accountSid = 'ACcb4d55de1bdc36dd7f278f19f19d8082';
-const authToken = '1cfd539bb65073658543d31baae81934';
-const client = require('twilio')(accountSid, authToken);
+var keys = require('twilio_key');
+const client = require('twilio')(keys.accountSid, keys.authToken);
 
 var sms = {
 
