@@ -12,11 +12,11 @@ app.post('/api/email', function (req, res, next) {
       function (callback) {
         email.sendEmail(
           callback,
-          'SENDER_EMAIL_ID',//sender email id
-          ['RECEIVER_EMAIL_ID'],//receiver email ids
-          'Subject Line',
+          req.body.fromemail,//sender email id
+          req.body.toemails,//receiver email ids
+          req.body.subject,
           'Text Content',
-          '<p style="font-size: 32px;">HTML Content</p>'
+          req.body.emailbody
         );
       }
     ], function (err, results) {

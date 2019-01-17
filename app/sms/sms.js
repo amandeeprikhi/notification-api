@@ -1,4 +1,4 @@
-var keys = require('twilio_key');
+var keys = require('./twilio_key');
 const client = require('twilio')(keys.accountSid, keys.authToken);
 
 var sms = {
@@ -13,7 +13,7 @@ var sms = {
             })
             .then(message => {
                 console.log(message);
-                send(JSON.stringify(message));
+                send(message);
             }) 
             .done();
     },
