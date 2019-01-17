@@ -14,7 +14,7 @@
   * The API key for *SendGrid* has been removed from the repo. It needs to be added back to the file: **app/email/sendgrid_api_key.js**
     * It follows the format like this :
     ```javascript
-    var send_grid_api_key = *SEND_GRID_API_KEY*;
+    var send_grid_api_key = SEND_GRID_API_KEY;
     module.exports = send_grid_api_key;
     ```
     * The **SEND_GRID_API_KEY** needs to be taken from the SendGrid account.
@@ -26,8 +26,8 @@
     * It follows the format like this :
     ```javascript
     var keys = {
-                accountSid : *ACCOUNT_SID*,
-                authToken : *AUTHENTICITION_TOKEN*
+                accountSid : ACCOUNT_SID,
+                authToken : AUTHENTICITION_TOKEN
     }
     module.exports = keys;
     ```
