@@ -64,7 +64,7 @@
 ###### Response Format
 ```javascript
 {
-    "accountSid": "ACcb4d55de1bdc36dd7f278f19f19d8082",
+    "accountSid": "ACCOUNT_SID",
     "apiVersion": "2010-04-01",
     "body": "This is a test SMS",
     "dateCreated": "2019-01-16T09:21:51.000Z",
@@ -79,18 +79,18 @@
     "numSegments": "1",
     "price": null,
     "priceUnit": "USD",
-    "sid": "SM1d5ecd1433f74e709d44c5f2bd695cd3",
+    "sid": "SID",
     "status": "queued",
     "subresourceUris": {
-        "media": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM1d5ecd1433f74e709d44c5f2bd695cd3/Media.json"
+        "media": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID/Media.json"
     },
     "to": "123",
-    "uri": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM1d5ecd1433f74e709d44c5f2bd695cd3.json"
+    "uri": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID.json"
 }
 ```
 
 
-####/api/sms/multiple: For sending SMS to multiple numbers.
+#### /api/sms/multiple: For sending SMS to multiple numbers.
 **Note :** Numbers need to be provided in the request body in JSON format.
 ###### Request Format
 **Request.body :** 
@@ -103,7 +103,7 @@
 ```javascript
 [
     {
-        "accountSid": "ACcb4d55de1bdc36dd7f278f19f19d8082",
+        "accountSid": "ACCOUNT_SID",
         "apiVersion": "2010-04-01",
         "body": "This is a test SMS.",
         "dateCreated": "2019-01-16T09:17:55.000Z",
@@ -118,16 +118,16 @@
         "numSegments": "1",
         "price": null,
         "priceUnit": "USD",
-        "sid": "SM17725ab4b2ef4e94a4c49c88fe8f5bb9",
+        "sid": "SID",
         "status": "queued",
         "subresourceUris": {
-            "media": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM17725ab4b2ef4e94a4c49c88fe8f5bb9/Media.json"
+            "media": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID/Media.json"
         },
         "to": "123",
-        "uri": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM17725ab4b2ef4e94a4c49c88fe8f5bb9.json"
+        "uri": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID.json"
     },
     {
-        "accountSid": "ACcb4d55de1bdc36dd7f278f19f19d8082",
+        "accountSid": "ACCOUNT_SID",
         "apiVersion": "2010-04-01",
         "body": "This is a test SMS.",
         "dateCreated": "2019-01-16T09:17:55.000Z",
@@ -142,13 +142,13 @@
         "numSegments": "1",
         "price": null,
         "priceUnit": "USD",
-        "sid": "SM287c5b542ddb42bbb150da22a1a77cf6",
+        "sid": "SID",
         "status": "queued",
         "subresourceUris": {
-            "media": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM287c5b542ddb42bbb150da22a1a77cf6/Media.json"
+            "media": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID/Media.json"
         },
         "to": "456",
-        "uri": "/2010-04-01/Accounts/ACcb4d55de1bdc36dd7f278f19f19d8082/Messages/SM287c5b542ddb42bbb150da22a1a77cf6.json"
+        "uri": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID.json"
     }
 ]
 ```
