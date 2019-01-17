@@ -10,32 +10,36 @@
 ## Various modules
 #### email :
   * The email module consists of functionalities that assist in sending out emails from the API.
-  * For implementing email functionality, **SendGrid** is being used.
-  * The API key for *SendGrid* has been removed from the repo. It needs to be added back to the file: *app/email/sendgrid_api_key.js*
+  * For implementing email functionality, [SendGrid](https://sendgrid.com/) is being used.
+  * The API key for *SendGrid* has been removed from the repo. It needs to be added back to the file: **app/email/sendgrid_api_key.js**
     * It follows the format like this :
+    ```javascript
     var send_grid_api_key = *SEND_GRID_API_KEY*;
     module.exports = send_grid_api_key;
+    ```
     * The **SEND_GRID_API_KEY** needs to be taken from the SendGrid account.
 
 #### sms :
   * The sms module consists of functionalities that assist in sending out SMS from the API.
-  * For implementing SMS funcationality, **Twilio** is being used.
-  * The API key for *Twilio* has been removed from the repo It needs to be added back to the file: *app/sms/twilio_key.js*
+  * For implementing SMS funcationality, [Twilio](https://www.twilio.com/) is being used.
+  * The API key for *Twilio* has been removed from the repo It needs to be added back to the file: **app/sms/twilio_key.js**
     * It follows the format like this :
+    ```javascript
     var keys = {
-    accountSid : *ACCOUNT_SID*,
-    authToken : *AUTHENTICITION_TOKEN*
+                accountSid : *ACCOUNT_SID*,
+                authToken : *AUTHENTICITION_TOKEN*
     }
     module.exports = keys;
+    ```
     * The **ACCOUNT_SID** as well as the **AUHTENTICATION_TOKEN** needs to be taken from the Twilio account.
 
-**NOTE :** In case of SMS, we get a queued status in the response. This is because of the reason that a *Magic Number* is being used as the **from** number.
+**NOTE :** In case of SMS, we get a queued status in the response. This is because of the reason that a **Magic Number** is being used as the **from** number.
 
 ## Exposed routes
 
 #### /api/email: For sending emails
 ###### Request Format 
-**Request.body :** 
+*Request.body :* 
 ```javascipt
 {
     "fromemail": "test@example.com",
@@ -55,7 +59,7 @@
 #### /api/sms/single: For sending SMS to a single number.
 **Note :** Number needs to be provided in the request body in JSON format.
 ###### Request Format
-**Request.body :** 
+*Request.body :* 
 ```javascript
 {
    "number": "123"
@@ -93,7 +97,7 @@
 #### /api/sms/multiple: For sending SMS to multiple numbers.
 **Note :** Numbers need to be provided in the request body in JSON format.
 ###### Request Format
-**Request.body :** 
+*Request.body :* 
 ```javascript
 {
    "numbers": ["123","456"] 
