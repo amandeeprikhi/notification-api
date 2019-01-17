@@ -33,7 +33,7 @@
 
 ## Exposed routes
 
-#### /api/email : For sending emails
+#### /api/email: For sending emails
 ###### Request Format 
 **Request.body :** 
 ```javascipt
@@ -52,7 +52,7 @@
 }
 
 ```
-####/api/sms/single: For sending SMS to a single number.
+#### /api/sms/single: For sending SMS to a single number.
 **Note :** Number needs to be provided in the request body in JSON format.
 ###### Request Format
 **Request.body :** 
