@@ -56,46 +56,8 @@
 }
 
 ```
-#### /api/sms/single: For sending SMS to a single number.
-**Note :** Number needs to be provided in the request body in JSON format.
-###### Request Format
-*Request.body :* 
-```javascript
-{
-   "number": "123"
-} 
-```
-###### Response Format
-```javascript
-{
-    "accountSid": "ACCOUNT_SID",
-    "apiVersion": "2010-04-01",
-    "body": "This is a test SMS",
-    "dateCreated": "2019-01-16T09:21:51.000Z",
-    "dateUpdated": "2019-01-16T09:21:51.000Z",
-    "dateSent": null,
-    "direction": "outbound-api",
-    "errorCode": null,
-    "errorMessage": null,
-    "from": "+15005550006",
-    "messagingServiceSid": null,
-    "numMedia": "0",
-    "numSegments": "1",
-    "price": null,
-    "priceUnit": "USD",
-    "sid": "SID",
-    "status": "queued",
-    "subresourceUris": {
-        "media": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID/Media.json"
-    },
-    "to": "123",
-    "uri": "/2010-04-01/Accounts/ACCOUNT_SID/Messages/SID.json"
-}
-```
-
-
-#### /api/sms/multiple: For sending SMS to multiple numbers.
-**Note :** Numbers need to be provided in the request body in JSON format.
+#### /api/sms: For sending SMS.
+**Note :** Number needs to be provided in the request body in JSON format and in an array.
 ###### Request Format
 *Request.body :* 
 ```javascript

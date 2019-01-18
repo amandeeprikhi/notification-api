@@ -29,16 +29,9 @@ app.post('/api/email', function (req, res, next) {
     });
   });
 
-app.post('/api/sms/single', function (req, res){
-    let number = req.body.number
-    sms.single(number,(message)=>{
-        res.send(message);
-    });
-})
-
-app.post('/api/sms/multiple', function (req, res){
+app.post('/api/sms', function (req, res){
     let numbers= req.body.numbers;
-    sms.multiple(numbers,(message)=>{
+    sms.send(numbers,(message)=>{
         res.send(message);
     });
 })
